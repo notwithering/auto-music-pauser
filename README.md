@@ -15,3 +15,17 @@ def works with elisa on pipewire havent tried with anything else
 - media player have the same mpris player name as the application name normalized
 - if using auto detection:
 	- audio system should expose sink inputs with `media.role = "music"` in `pactl list sink-inputs`
+
+## building
+
+use [gobb](https://github.com/notwithering/gobb) to bundle it
+
+```bash
+gobb src/main.sh > build.sh
+```
+
+or
+
+```bash
+curl -L https://github.com/notwithering/gobb/raw/main/gobb.sh | bash -s src/main.sh > build.sh
+```
